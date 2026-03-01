@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You Florist</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#E6E6FA;
+    color:#4B3F72;
+}
+
+/* NAVBAR */
+nav{
+    background:#9370DB;
+    padding:15px 0;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.section-title{
+    font-size:2.5rem;
+    margin-bottom:25px;
+    color:#6A5ACD;
+}
+
+/* HOME */
+.home img{
+    width:300px;
+    margin-bottom:0px;
+}
+
+.home h1{
+    font-size:3rem;
+    color:#6A5ACD;
+}
+
+.home p{
+    font-size:1.2rem;
+    margin-top:5px;
+}
+
+/* CARDS */
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 5px 0;
+    color:#6A5ACD;
+}
+
+.card p{
+    padding:0 15px 15px;
+    font-size:0.9rem;
+}
+
+.price{
+    font-weight:bold;
+    color:#9370DB;
+}
+
+#services {
+    padding: 60px 10%;
+    background-color: #F3E8FF; /* light lavender */
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+    color: #5E3B8C;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.service-item {
+    width: 260px;
+}
+
+.service-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    color: #6A5ACD;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+/* ABOUT & SERVICES TEXT */
+.content-text{
+    max-width:900px;
+    margin:15px auto;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+/* FOOTER */
+footer{
+    background:#9370DB;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <img src="logo.png" alt="For You Florist Logo">
+    <h1>For You Florist</h1>
+    <p>Elegant Blooms Crafted with Love 💜</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p class="content-text">
+        For You Florist is a premium boutique flower shop dedicated to creating 
+        unforgettable floral experiences. Our passion lies in designing elegant, 
+        handcrafted bouquets that beautifully express love, gratitude, celebration, 
+        and sympathy. Every arrangement is thoughtfully created using fresh, 
+        high-quality blooms sourced daily.
+    </p>
+
+    <p class="content-text">
+        We believe flowers are more than decorations — they are emotions wrapped 
+        in petals. From romantic rose bouquets to graceful wedding arrangements, 
+        our designs blend creativity, color harmony, and elegance to match every 
+        special moment in your life.
+    </p>
+
+    <p class="content-text">
+        At For You Florist, customer happiness is our priority. We focus on 
+        personalized service, custom floral styling, and timely delivery to ensure 
+        every order feels meaningful and memorable.
+    </p>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2 class="section-title">Our Signature Bouquets</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/05/7b/6c/057b6c16c859a8fd2c101379b8496e8d.jpg" alt="Rose Bouquet">
+            <h3>Classic Rose Bouquet</h3>
+            <p>Elegant red roses arranged for romantic celebrations.</p>
+            <p class="price">₹799</p>
+        </div>
+
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.Qj_rPjKYdEI_rN1SqneV6QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tulip Bouquet">
+            <h3>Pastel Tulip Collection</h3>
+            <p>Soft lavender and pink tulips for graceful gifting.</p>
+            <p class="price">₹899</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/67/0d/44/670d4436cec7c10b434cdf6667008d55.jpg" alt="Mixed Flowers">
+            <h3>Mixed Floral Basket</h3>
+            <p>Seasonal blooms blended with vibrant colors.</p>
+            <p class="price">₹999</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/c9/e2/29/c9e229c798192afc11c2439be31135d6.jpg" alt="Wedding Bouquet">
+            <h3>Wedding Special Bouquet</h3>
+            <p>Elegant white and lavender florals for weddings.</p>
+            <p class="price">₹1499</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/ef/25/07/ef2507ac44e48878f7e1e42c7469117a.jpg" alt="Sunflower Bouquet">
+            <h3>Sunflower Delight</h3>
+            <p>Bright and cheerful arrangement to light up any day.</p>
+            <p class="price">₹699</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-item">
+            <img src="https://i.pinimg.com/736x/b8/46/45/b846457ac760627612974bb4d7aad8f5.jpg" alt="Bouquet Service">
+            <h3>Custom Flower Bouquets</h3>
+            <p>
+                Beautiful handcrafted bouquets made with fresh premium flowers 
+                for birthdays, anniversaries, and special occasions.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <img src="https://i.pinimg.com/736x/bd/87/a8/bd87a85501b6a2b7fa81190a7421b32d.jpg" alt="Artificial Flowers">
+            <h3>Real & Artificial Arrangements</h3>
+            <p>
+                We provide both natural fresh flowers and high-quality artificial 
+                floral designs for long-lasting decoration and gifting.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <img src="https://i.pinimg.com/736x/78/45/1f/78451f89758678dd9cee689e2ca15c02.jpg" alt="Wedding Decoration">
+            <h3>Wedding Floral Decoration</h3>
+            <p>
+                Complete wedding decor including stage decoration, mandap décor, 
+                bridal bouquets, garlands and floral arches.
+            </p>
+        </div>
+
+        <div class="service-item">
+            <img src="https://i.pinimg.com/1200x/d1/13/2a/d1132a9df6263f1b934c745e566a778a.jpg" alt="Event Decoration">
+            <h3>Event & Party Decoration</h3>
+            <p>
+                Floral styling for engagements, birthday parties, baby showers 
+                and corporate events with customized themes.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="content-text">📍 Location: Ammapet, Thanjavur, India</p>
+    <p class="content-text">📞 Phone: +91 98765 43210</p>
+    <p class="content-text">📧 Email: foryouflorist@gmail.com</p>
+    <p class="content-text">
+        <a href="https://www.google.com/maps" target="_blank">
+            View Location on Google Maps
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2026 For You Florist | Crafted with 💜 Elegance
+</footer>
+
+</body>
+</html>
